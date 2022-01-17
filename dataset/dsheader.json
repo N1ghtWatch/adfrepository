@@ -1,0 +1,62 @@
+{
+	"name": "dsheader",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "blsInput",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "ListOfOrders",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "AmazingMartEU2-Latest.xls",
+				"container": "coninput"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "Order ID",
+				"type": "String"
+			},
+			{
+				"name": "Order Date",
+				"type": "String"
+			},
+			{
+				"name": "Customer Name",
+				"type": "String"
+			},
+			{
+				"name": "City",
+				"type": "String"
+			},
+			{
+				"name": "Country",
+				"type": "String"
+			},
+			{
+				"name": "Region",
+				"type": "String"
+			},
+			{
+				"name": "Segment",
+				"type": "String"
+			},
+			{
+				"name": "Ship Date",
+				"type": "String"
+			},
+			{
+				"name": "Ship Mode",
+				"type": "String"
+			},
+			{
+				"name": "State",
+				"type": "String"
+			}
+		]
+	}
+}
