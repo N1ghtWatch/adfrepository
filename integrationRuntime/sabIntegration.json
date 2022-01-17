@@ -1,0 +1,6 @@
+{
+	"name": "sabIntegration",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
