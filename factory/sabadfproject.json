@@ -1,0 +1,9 @@
+{
+	"name": "sabadfproject",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0a3d5f7f-a199-4f90-b028-2498f20588d8",
+		"tenantId": "07cc872f-b6e3-487f-834e-25eb4f34ddad"
+	}
+}
