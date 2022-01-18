@@ -1,0 +1,34 @@
+{
+	"name": "dstarget",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "blsInput",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "SalesTargets",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "AmazingMartEU2-Latest.xls",
+				"container": "coninput"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "Order Date",
+				"type": "String"
+			},
+			{
+				"name": "Category",
+				"type": "String"
+			},
+			{
+				"name": "Target",
+				"type": "String"
+			}
+		]
+	}
+}
